@@ -16,7 +16,7 @@ def load_data  from
     data = JSON.parse(file)
     data["rentals"].map do |rent| 
         car = data["cars"].select {|car| car["id"].eql?(rent["car_id"])}.first
-        opt = data["options"].select {|opt| opt["rental_id"].eql?(rent["id"])}
+        opt = data["options"].select {|opt| opt["rental_id"].eql?(rent["id"])} unless data["options"].nil?
         Rental.new(rent, Car.new(car), opt)
     end
 
