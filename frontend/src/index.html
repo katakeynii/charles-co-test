@@ -5,11 +5,20 @@
     <title>Charles.co</title>
   </head>
   <body>
-    <h1>Hello!</h1>
-    <p>
-      Edit this file and linked JS/CSS, changes will appear directly in your
-      browser.
-    </p>
+    <h1>Drivy Platform</h1>
+    <div class="formContainer">
+      <div class="formGroup">
+        <label for="">Duration (in days)</label>
+        <input id="duration" class="form-control" type="number" min="1" max="30" placeholder="Please enter the duration (in days)">
+      </div>
+      <div class="formGroup">
+        <label for="">Distance (in kms) </label>
+        <select class="form-control" id="distance">
+          <option value="" >Please enter the distance</option>
+        </select>
+      </div>
+    </div>
+    <div id="cars"></div>
     <script src="./index.js"></script>
   </body>
 </html>

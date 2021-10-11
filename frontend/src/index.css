@@ -1,0 +1,66 @@
+body{
+    padding: 30px
+}
+div#cars {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 15px;
+    /* grid-auto-rows: minmax(100px, auto); */
+}
+#cars .car-container{
+    box-sizing: border-box;
+    /* box-shadow: 0px 0px 2px rgb(173, 173, 173); */
+    border-radius: 10px;
+    background: #f3f3f3;
+}
+
+#cars .car-container img{
+    width: 100%;
+}
+#cars .car-container h2{
+    margin: 0;
+}
+.price-container {
+    display: flex;
+}
+.price{
+    background-color: #002865;
+    color: #fff;
+    border-radius: 3px;
+    padding: 5px 10px;
+    margin: 0px 5px;
+    font-size: 11px;
+}
+
+.detail-container{
+    padding: 10px;
+}
+
+.formContainer{
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.form-control{
+    padding: 10px 15px;
+    box-sizing: border-box;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+    border: 1px solid #ced4da;
+    appearance: none;
+    border-radius: 6px;
+    min-width: 200px;
+}
+
+.formGroup{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+.rental-price{
+    padding: 20px 0px;
+}
